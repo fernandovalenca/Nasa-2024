@@ -1,0 +1,23 @@
+{
+  "home": {
+    "nav": {
+      "aboutUs": "Sobre nós",
+      "ourChallenge": "Nosso desafio",
+      "contactUs": "Contate-nos"
+    }
+  },
+  "profile": {
+    "title": "Editar perfil",
+    "description": "Faça alterações no seu perfil aqui. Clique em salvar quando terminar.",
+    "form": {
+      "body": "Corpo do formulário",
+      "submit": "Salvar alterações"
+    }
+  },
+  "theme-mode": {
+    "label": "Alterar tema",
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "home": {
+    "nav": {
+      "aboutUs": "About us",
+      "ourChallenge": "Our challenge",
+      "contactUs": "Contact us"
+    }
+  },
+  "profile": {
+    "title": "Edit profile",
+    "description": "Make changes to your profile here. Click save when you're done.",
+    "form": {
+      "body": "Form body",
+      "submit": "Save changes"
+    }
+  },
+  "theme-mode": {
+    "label": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}
