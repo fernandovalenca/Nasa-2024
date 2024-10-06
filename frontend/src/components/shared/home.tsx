@@ -1,35 +1,35 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { ThemeModeToggle } from "./theme-mode-toggle";
-import { LocaleSwitcher } from "./locale-switcher";
+import { Avatar } from "@radix-ui/react-avatar";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Facebook,
+  Github,
+  Globe,
+  Handshake,
+  Headset,
+  Instagram,
+  Linkedin,
+  Sprout,
+  Twitter,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
-import Logo from "./logo";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import { AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Badge } from "../ui/badge";
-import { ScrollArea } from "../ui/scroll-area";
 import { Card } from "../ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "../ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Github,
-  Sprout,
-  Globe,
-  Handshake,
-  Headset,
-} from "lucide-react";
-import Image from "next/image";
-import { Avatar } from "@radix-ui/react-avatar";
-import { AvatarFallback, AvatarImage } from "../ui/avatar";
+import { ScrollArea } from "../ui/scroll-area";
+import { LocaleSwitcher } from "./locale-switcher";
+import Logo from "./logo";
+import { ThemeModeToggle } from "./theme-mode-toggle";
 
 type SocialMedia = {
   link: string;
@@ -320,12 +320,16 @@ export default function Home() {
           <div className="container flex flex-col-reverse lg:flex-row gap-4 justify-center items-center mx-auto px-4">
             {/* Texto e Input */}
             <div className="flex-1 max-w-2xl">
-              <Badge className="text-[#244030] bg-[#D5EEC6] rounded-full">
-                Support for agricultural decision-making
+              <Badge 
+                className="text-[#244030] bg-[#D5EEC6] rounded-full"
+              >
+                {t("sections.ourChallenge.badge")}
               </Badge>
 
-              <h2 className="text-4xl lg:text-6xl font-bold mb-7 mt-5 text-gray-900 dark:text-white">
-                Observation of weather data to assist your planting
+              <h2 
+                className="text-4xl lg:text-6xl font-bold mb-7 mt-5 text-gray-900 dark:text-white"
+              >
+                {t("sections.ourChallenge.title")}
               </h2>
 
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-7 font-normal">

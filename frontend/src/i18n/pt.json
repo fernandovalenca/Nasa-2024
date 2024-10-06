@@ -1,9 +1,20 @@
 {
   "home": {
     "nav": {
+      "heroSection": "Principal",
       "aboutUs": "Sobre nós",
       "ourChallenge": "Nosso desafio",
       "contactUs": "Contate-nos"
+    },
+    "sections": {
+      "ourChallenge": {
+        "badge": "Apoio à tomada de decisões agrícolas",
+        "title": "Observação de dados meteorológicos para auxiliar no seu plantio",
+        "description": "Somos uma empresa dedicada a fornecer produtos e serviços de alta qualidade aos nossos clientes. Nossa equipe de especialistas está comprometida com a inovação e a excelência em tudo o que fazemos.",
+        "input": {
+          "placeholder": "Digite o nome da sua cidade"
+        }
+      }
     }
   },
   "profile": {
