@@ -16,7 +16,17 @@ import {
   CarouselNext,
 } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Github,
+  Sprout,
+  Globe,
+  Handshake,
+  Headset,
+} from "lucide-react";
 import Image from "next/image";
 import { Avatar } from "@radix-ui/react-avatar";
 import { AvatarFallback, AvatarImage } from "../ui/avatar";
@@ -24,6 +34,24 @@ import { AvatarFallback, AvatarImage } from "../ui/avatar";
 type SocialMedia = {
   link: string;
   icon: "facebook" | "twitter" | "instagram" | "linkedin" | "github";
+};
+
+type Benefit = {
+  icon: "sprout" | "handshake" | "headset" | "globe";
+  title: string;
+};
+
+const BenefitIcon = ({ icon }: { icon: Benefit["icon"] }) => {
+  switch (icon) {
+    case "sprout":
+      return <Sprout className="h-4 w-4" />;
+    case "globe":
+      return <Globe className="h-4 w-4" />;
+    case "handshake":
+      return <Handshake className="h-4 w-4" />;
+    case "headset":
+      return <Headset className="h-4 w-4" />;
+  }
 };
 
 const SocialIcon = ({ icon }: { icon: SocialMedia["icon"] }) => {
@@ -83,8 +111,9 @@ export default function Home() {
   };
 
   const sections = [
+    { id: "home", label: "Home" },
     { id: "our-challenge", label: t("nav.ourChallenge") },
-    { id: "contact-us", label: t("nav.contactUs") },
+    { id: "our-application", label: "Our Application" },
     { id: "about-us", label: t("nav.aboutUs") },
   ];
 
@@ -123,7 +152,7 @@ export default function Home() {
     },
     {
       name: "Luiz Fernando",
-      area: "Dev Frontend",
+      area: "Dev Full-stack",
       about: "",
       image: "https://github.com/lz-fernando.png",
       medias: [
@@ -178,10 +207,10 @@ export default function Home() {
       ],
     },
     {
-      name: "Maria Fernanda1",
-      area: "Estudante de Física",
+      name: "José Abraão",
+      area: "Dev Backend",
       about: "",
-      image: "https://github.com/fukittyx.png",
+      image: "https://github.com/abraao2005.png",
       medias: [
         {
           icon: "linkedin",
@@ -206,10 +235,10 @@ export default function Home() {
       ],
     },
     {
-      name: "Maria Fernanda2",
-      area: "Estudante de Física",
+      name: "Walmisson Cardoso",
+      area: "Dev Full-stack",
       about: "",
-      image: "https://github.com/fukittyx.png",
+      image: "https://github.com/walminho.png",
       medias: [
         {
           icon: "linkedin",
@@ -232,6 +261,25 @@ export default function Home() {
           link: "https://github.com/fukittyx",
         },
       ],
+    },
+  ];
+
+  const benefits: Benefit[] = [
+    {
+      icon: "globe",
+      title: "Data-Driven Mission",
+    },
+    {
+      icon: "sprout",
+      title: "Future Vision",
+    },
+    {
+      icon: "handshake",
+      title: "Trusted Partnership",
+    },
+    {
+      icon: "headset",
+      title: "Support Team",
     },
   ];
 
@@ -266,7 +314,7 @@ export default function Home() {
 
       <ScrollArea className="select-none">
         <section
-          id="our-challenge"
+          id="home"
           className="min-h-screen h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800"
         >
           <div className="container flex flex-col-reverse lg:flex-row gap-4 justify-center items-center mx-auto px-4">
@@ -280,20 +328,11 @@ export default function Home() {
                 Observation of weather data to assist your planting
               </h2>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-7">
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-7 font-normal">
                 We are a company dedicated to providing high-quality products
                 and services to our customers. Our team of experts is committed
                 to innovation and excellence in everything we do.
               </p>
-
-              <input
-                type="text"
-                className="w-full h-16 rounded-full px-8 border border-gray-300 dark:border-gray-600 dark:bg-gray-900"
-                placeholder="Enter your city's name"
-                aria-label="Enter your city's name"
-                autoComplete="off"
-                autoCapitalize="off"
-              />
             </div>
 
             {/* Imagem */}
@@ -313,31 +352,188 @@ export default function Home() {
         </section>
 
         <section
-          id="contact-us"
-          className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900"
+          id="our-challenge"
+          className="min-h-screen flex items-start justify-center bg-white dark:bg-gray-900"
         >
           <div className="container mx-auto px-4 py-16">
-            <h2 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
-              {t("nav.contactUs")}
+            <h2 className="text-center text-6xl font-bold mb-20 text-gray-900 dark:text-white">
+              Our <span className="text-green-700">Challenge</span>
             </h2>
-            <p className="text-xl text-gray-700 dark:text-gray-300">
-              Discover our range of cutting-edge products designed to meet your
-              needs. From sustainable solutions to innovative technologies, we
-              have something for everyone.
-            </p>
+            <div className="container flex justify-center gap-16">
+              <Image
+                priority
+                src="/assets/images/our-challenge.png"
+                alt="Weather observation for agricultural decision-making"
+                height={638}
+                width={472}
+                className="object-cover"
+              />
+              <div className="max-w-2xl flex flex-col items-center justify-start">
+                <h3 className="text-3xl font-bold text-center">
+                  Leveraging{" "}
+                  <span className="text-green-700">Earth Observation Data</span>{" "}
+                  for Informed{" "}
+                  <span className="text-green-700">
+                    Agricultural Decision-Making
+                  </span>
+                </h3>
+                <p className="text-lg mt-7 text-justify font-normal">
+                  Currently, the agricultural sector faces several challenges,
+                  such as climate change, resource scarcity, and the need for
+                  sustainable production. To overcome these obstacles, it is
+                  essential for farmers and decision-makers to utilize advanced
+                  technologies to gain valuable insights into their land and
+                  crops.
+                </p>
+
+                <div className="container grid grid-cols-2 gap-8 py-10">
+                  {benefits.map((benefit, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center justify-center gap-4"
+                    >
+                      <div className="bg-green-700 p-2 rounded-full">
+                        {BenefitIcon({
+                          icon: benefit.icon,
+                        })}
+                      </div>
+                      <span className="text-lg font-bold">{benefit.title}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="container mt-28 mb-16">
+              <h3 className="font-bold text-3xl mb-5">Description</h3>
+              <p className="text-lg mt-7 text-justify font-normal">
+                The goal of this challenge is to develop solutions that use
+                Earth observation data — such as satellite imagery and remote
+                sensing — to support more informed agricultural decisions.
+                Participants must create tools or platforms that help farmers
+                monitor the state of crops, predict environmental changes, and
+                optimize the use of resources, such as water and fertilizers.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="our-application"
+          className="min-h-screen flex items-start justify-center bg-gray-100 dark:bg-gray-800"
+        >
+          <div className="container mx-auto px-4 py-16">
+            <div className="flex items-center justify-center gap-10">
+              <h2 className="text-6xl font-bold text-gray-900 dark:text-white max-w-96">
+                Our <span className="text-green-700">Application</span>
+              </h2>
+
+              <p className="text-lg mt-7 text-justify font-normal">
+                Our application utilizes advanced climate, drought, and soil
+                moisture data provided by NASA to transform the way agribusiness
+                makes decisions.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-1 text-justify">
+              <p className="text-lg mt-7 text-justify font-normal">
+                With precise and real-time insights, we help farmers and
+                managers identify the most promising crops, optimize resource
+                use, and prevent crop losses. By anticipating risks and
+                highlighting opportunities, our solution promotes smarter and
+                more sustainable agricultural management, ensuring that every
+                decision is backed by cutting-edge science and technology.
+              </p>
+              <p className="text-lg mt-7 text-justify font-normal">
+                To achieve this goal, we employ Machine Learning techniques that
+                analyze these data in depth, generating accurate predictions
+                about crop behavior and identifying which plantations will yield
+                the best results. This enables us to anticipate climate risks,
+                optimize resource use, and reduce losses, promoting smarter
+                agricultural management based on cutting-edge technology and
+                data science.
+              </p>
+              <p className="text-lg mt-7 text-justify font-normal">
+                Our application utilizes advanced climate, drought, and soil
+                moisture data provided by NASA sources, such as CropCASMA and
+                the US Drought Monitor, to transform decision-making in
+                agribusiness.
+              </p>
+            </div>
+            <div className="mt-20 flex gap-8">
+              <Image
+                priority
+                src="/assets/images/us-drought-monitor.png"
+                alt=""
+                height={433}
+                width={848}
+                className="object-cover"
+              />
+              <div className="pt-10">
+                <a
+                  href="https://nassgeo.csiss.gmu.edu/CropCASMA/"
+                  target="_blank"
+                  className="text-2xl font-bold"
+                >
+                  <span className="text-green-700">
+                    Crop Condition and Soil Moisture Analytics
+                  </span>{" "}
+                  (Crop-CASMA)
+                </a>
+                <p className="text-lg mt-7 text-justify font-normal">
+                  Crop CASMA provides access to high-resolution data from NASA's
+                  Soil Moisture Active Passive (SMAP) mission and the Moderate
+                  Resolution Imaging Spectroradiometer (MODIS) instrument in an
+                  easy-to-use format. Soil moisture data is essential for
+                  professionals in agriculture and natural resources who use
+                  soil moisture in conjunction with other data to plan planting,
+                  predict yields, monitor droughts or floods, and enhance
+                  weather forecasting. This application offers a suite of
+                  services, including Web Map Service (WMS), Web Coverage
+                  Service (WCS), and Web Processing Services (WPS).
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 flex gap-8">
+              <div className="pt-20">
+                <a
+                  href="https://droughtmonitor.unl.edu/"
+                  target="_blank"
+                  className="text-2xl font-bold"
+                >
+                  <span className="text-green-700">U.S.</span> Drought{" "}
+                  <span className="text-green-700">Monitor</span>
+                </a>
+                <p className="text-lg mt-7 text-justify font-normal">
+                  The US Drought Monitor is a weekly map of drought conditions
+                  used by policymakers to help determine drought relief
+                  allocations and drought declarations. NASA satellites provide
+                  water availability data for the US Drought Monitor.
+                </p>
+              </div>
+
+              <Image
+                priority
+                src="/assets/images/crop-casma.png"
+                alt=""
+                height={433}
+                width={848}
+                className="object-cover"
+              />
+            </div>
           </div>
         </section>
 
         <section
           id="about-us"
-          className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800"
+          className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900"
         >
-          <div className="container mx-auto px-4 py-16">
-            <h2 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
+          <div className="container h-full flex-1 flex flex-col mx-auto px-4 py-16">
+            <h2 className="text-4xl font-bold mb-20 text-gray-900 dark:text-white">
               {t("nav.aboutUs")}
             </h2>
 
-            <div className="flex items-center justify-center">
+            <div className="flex-1 flex items-center justify-center">
               <Carousel className="w-full max-w-7xl" plugins={[plugin.current]}>
                 <CarouselContent className="ml-2">
                   {profiles.map((profile, index) => (
