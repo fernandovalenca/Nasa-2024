@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import Logo from "./logo";
 import { Badge } from "../ui/badge";
 import { ScrollArea } from "../ui/scroll-area";
-import { Card, CardContent } from "../ui/card";
+import { Card } from "../ui/card";
 import {
   Carousel,
   CarouselContent,
