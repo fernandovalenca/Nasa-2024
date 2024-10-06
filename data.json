@@ -1,0 +1,141 @@
+{
+    "Milho": {
+        "Tempo de Produção": "90 a 150 dias",
+        "Quando Plantar": "Início da estação chuvosa",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Variável conforme a região, geralmente na primavera ou início do verão",
+        "Tipo de Solo": "Solos férteis, bem drenados, argilosos ou arenosos",
+        "Volume de Chuva Necessário": "500 a 800 mm",
+        "Quando Fertilizar": "Antes do plantio e cobertura durante o crescimento",
+        "Densidade de Plantio": "20 a 30 cm entre plantas; 70 a 90 cm entre fileiras",
+        "Estresse Hídrico": "5 a 7 mm de água por dia"
+    },
+    "Soja": {
+        "Tempo de Produção": "90 a 120 dias",
+        "Quando Plantar": "Final do inverno e início da primavera",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Outono ou primavera, dependendo da região",
+        "Tipo de Solo": "Solo fértil e bem drenado",
+        "Volume de Chuva Necessário": "600 a 800 mm",
+        "Quando Fertilizar": "Antes do plantio e cobertura com nitrogênio",
+        "Densidade de Plantio": "40 a 50 cm entre plantas; 50 a 70 cm entre fileiras",
+        "Estresse Hídrico": "4 a 6 mm de água por dia"
+    },
+    "Arroz": {
+        "Tempo de Produção": "90 a 180 dias",
+        "Quando Plantar": "Início da estação chuvosa",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Variável conforme a região, geralmente na primavera",
+        "Tipo de Solo": "Solos argilosos ou orgânicos com boa retenção de água",
+        "Volume de Chuva Necessário": "1.000 a 1.500 mm",
+        "Quando Fertilizar": "Na preparação do solo e após o transplante",
+        "Densidade de Plantio": "15 a 25 cm entre plantas; 30 a 40 cm entre fileiras",
+        "Estresse Hídrico": "8 a 12 mm de água por dia"
+    },
+    "Trigo": {
+        "Tempo de Produção": "120 a 180 dias",
+        "Quando Plantar": "Outono ou início da primavera",
+        "Lua Ideal para Plantio": "Lua cheia",
+        "Época de Plantio": "Outono ou primavera, dependendo da região",
+        "Tipo de Solo": "Solos férteis, bem drenados",
+        "Volume de Chuva Necessário": "400 a 600 mm",
+        "Quando Fertilizar": "Antes da semeadura e cobertura com nitrogênio",
+        "Densidade de Plantio": "20 a 25 cm entre plantas; 25 a 30 cm entre fileiras",
+        "Estresse Hídrico": "4 a 5 mm de água por dia"
+    },
+    "Batata": {
+        "Tempo de Produção": "90 a 120 dias",
+        "Quando Plantar": "Final do inverno e início da primavera",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Primavera, após as geadas",
+        "Tipo de Solo": "Solos férteis, bem drenados e ricos em matéria orgânica",
+        "Volume de Chuva Necessário": "600 a 800 mm",
+        "Quando Fertilizar": "Antes do plantio e durante o crescimento",
+        "Densidade de Plantio": "30 a 40 cm entre plantas; 75 a 90 cm entre fileiras",
+        "Estresse Hídrico": "6 a 8 mm de água por dia"
+    },
+    "Tomate": {
+        "Tempo de Produção": "60 a 100 dias",
+        "Quando Plantar": "Primavera, após as geadas",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Primavera, após as geadas",
+        "Tipo de Solo": "Solos férteis, bem drenados e ricos em matéria orgânica",
+        "Volume de Chuva Necessário": "500 a 700 mm",
+        "Quando Fertilizar": "Antes do plantio e durante o crescimento",
+        "Densidade de Plantio": "40 a 50 cm entre plantas; 70 a 100 cm entre fileiras",
+        "Estresse Hídrico": "5 a 6 mm de água por dia"
+    },
+    "Feijão": {
+        "Tempo de Produção": "60 a 90 dias",
+        "Quando Plantar": "Final da estação chuvosa",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Outono, após a estação chuvosa",
+        "Tipo de Solo": "Solos férteis e leves, bem drenados",
+        "Volume de Chuva Necessário": "400 a 600 mm",
+        "Quando Fertilizar": "Antes do plantio e durante o crescimento",
+        "Densidade de Plantio": "20 a 30 cm entre plantas; 40 a 60 cm entre fileiras",
+        "Estresse Hídrico": "3 a 4 mm de água por dia"
+    },
+    "Cana-de-açúcar": {
+        "Tempo de Produção": "12 a 24 meses",
+        "Quando Plantar": "Início da estação chuvosa",
+        "Lua Ideal para Plantio": "Lua cheia",
+        "Época de Plantio": "Variável conforme a região, geralmente na primavera",
+        "Tipo de Solo": "Solos férteis, ricos em nutrientes",
+        "Volume de Chuva Necessário": "1.200 a 1.800 mm",
+        "Quando Fertilizar": "Antes do plantio e após o desenvolvimento inicial",
+        "Densidade de Plantio": "1,5 a 2 m entre plantas; 1,5 a 2 m entre fileiras",
+        "Estresse Hídrico": "10 a 15 mm de água por dia"
+    },
+    "Cenoura": {
+        "Tempo de Produção": "70 a 120 dias",
+        "Quando Plantar": "Primavera ou outono",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Março a maio ou agosto a setembro",
+        "Tipo de Solo": "Solos férteis, soltos e bem drenados",
+        "Volume de Chuva Necessário": "400 a 600 mm",
+        "Quando Fertilizar": "Antes do plantio e durante o crescimento",
+        "Densidade de Plantio": "5 a 10 cm entre plantas; 20 a 30 cm entre fileiras",
+        "Estresse Hídrico": "5 a 8 mm de água por dia"
+    },
+    "Cebola": {
+        "Tempo de Produção": "90 a 150 dias",
+        "Quando Plantar": "Início da primavera ou outono",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Março a abril ou agosto a setembro",
+        "Tipo de Solo": "Solos férteis, ricos em nutrientes",
+        "Volume de Chuva Necessário": "600 a 800 mm",
+        "Quando Fertilizar": "Antes do plantio e durante o crescimento",
+        "Densidade de Plantio": "10 a 15 cm entre plantas; 30 a 40 cm entre fileiras",
+        "Estresse Hídrico": "5 a 7 mm de água por dia"
+    },
+    "Brócolis": {
+        "Tempo de Produção": "60 a 100 dias",
+        "Quando Plantar": "Primavera ou outono",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Março a maio ou agosto a setembro",
+        "Tipo de Solo": "Solos férteis, ricos em matéria orgânica",
+        "Volume de Chuva Necessário": "500 a 700 mm",
+        "Quando Fertilizar": "Antes do plantio e durante o crescimento",
+        "Densidade de Plantio": "40 a 50 cm entre plantas; 70 a 80 cm entre fileiras",
+        "Estresse Hídrico": "4 a 6 mm de água por dia"
+    },
+    "Uva": {
+        "Tempo de Produção": "2 a 3 anos para produção",
+        "Quando Plantar": "Início da primavera",
+        "Lua Ideal para Plantio": "Lua cheia",
+        "Época de Plantio": "Março a abril",
+        "Tipo de Solo": "Solos férteis, bem drenados e ricos em matéria orgânica"
+    },
+    "Pimenta": {
+        "Tempo de Produção": "70 a 100 dias",
+        "Quando Plantar": "Primavera, após as geadas",
+        "Lua Ideal para Plantio": "Lua crescente",
+        "Época de Plantio": "Primavera, após as geadas",
+        "Tipo de Solo": "Solos férteis e bem drenados",
+        "Volume de Chuva Necessário": "400 a 600 mm",
+        "Quando Fertilizar": "Antes do plantio e durante o crescimento",
+        "Densidade de Plantio": "40 a 50 cm entre plantas; 70 a 100 cm entre fileiras",
+        "Estresse Hídrico": "5 a 6 mm de água por dia"
+    }
+}
