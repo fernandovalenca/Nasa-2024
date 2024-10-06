@@ -79,7 +79,7 @@ type ProfileData = {
 
 export default function Home() {
   const t = useTranslations("home");
-  const [activeSection, setActiveSection] = useState("about-us");
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -111,10 +111,10 @@ export default function Home() {
   };
 
   const sections = [
-    { id: "home", label: "Home" },
-    { id: "our-challenge", label: t("nav.ourChallenge") },
-    { id: "our-application", label: "Our Application" },
-    { id: "about-us", label: t("nav.aboutUs") },
+    { id: "home", label: t("nav.home") },
+    { id: "our-challenge", label: t("nav.our-challenge") },
+    { id: "our-application", label: t("nav.our-application") },
+    { id: "about-us", label: t("nav.about-us") },
   ];
 
   const plugin = useRef(
@@ -130,23 +130,23 @@ export default function Home() {
       medias: [
         {
           icon: "linkedin",
-          link: "https://github.com/fernandovalenca",
+          link: "",
         },
         {
           icon: "github",
-          link: "https://github.com/fernandovalenca",
+          link: "",
         },
         {
           icon: "instagram",
-          link: "https://github.com/fernandovalenca",
+          link: "",
         },
         {
           icon: "facebook",
-          link: "https://github.com/fernandovalenca",
+          link: "",
         },
         {
           icon: "twitter",
-          link: "https://github.com/fernandovalenca",
+          link: "",
         },
       ],
     },
@@ -158,23 +158,23 @@ export default function Home() {
       medias: [
         {
           icon: "linkedin",
-          link: "https://github.com/lz-fernando",
+          link: "",
         },
         {
           icon: "github",
-          link: "https://github.com/lz-fernando",
+          link: "",
         },
         {
           icon: "instagram",
-          link: "https://github.com/lz-fernando",
+          link: "",
         },
         {
           icon: "facebook",
-          link: "https://github.com/lz-fernando",
+          link: "",
         },
         {
           icon: "twitter",
-          link: "https://github.com/lz-fernando",
+          link: "",
         },
       ],
     },
@@ -186,23 +186,23 @@ export default function Home() {
       medias: [
         {
           icon: "linkedin",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "github",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "instagram",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "facebook",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "twitter",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
       ],
     },
@@ -214,23 +214,23 @@ export default function Home() {
       medias: [
         {
           icon: "linkedin",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "github",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "instagram",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "facebook",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "twitter",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
       ],
     },
@@ -242,23 +242,23 @@ export default function Home() {
       medias: [
         {
           icon: "linkedin",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "github",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "instagram",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "facebook",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
         {
           icon: "twitter",
-          link: "https://github.com/fukittyx",
+          link: "",
         },
       ],
     },
@@ -267,19 +267,19 @@ export default function Home() {
   const benefits: Benefit[] = [
     {
       icon: "globe",
-      title: "Data-Driven Mission",
+      title: t("sections.our-challenge.benefits.data-driven-mission"),
     },
     {
       icon: "sprout",
-      title: "Future Vision",
+      title: t("sections.our-challenge.benefits.future-vision"),
     },
     {
       icon: "handshake",
-      title: "Trusted Partnership",
+      title: t("sections.our-challenge.benefits.trusted-partnership"),
     },
     {
       icon: "headset",
-      title: "Support Team",
+      title: t("sections.our-challenge.benefits.support-team"),
     },
   ];
 
@@ -320,22 +320,16 @@ export default function Home() {
           <div className="container flex flex-col-reverse lg:flex-row gap-4 justify-center items-center mx-auto px-4">
             {/* Texto e Input */}
             <div className="flex-1 max-w-2xl">
-              <Badge 
-                className="text-[#244030] bg-[#D5EEC6] rounded-full"
-              >
-                {t("sections.ourChallenge.badge")}
+              <Badge className="text-[#244030] bg-[#D5EEC6] rounded-full">
+                {t("sections.home.badge")}
               </Badge>
 
-              <h2 
-                className="text-4xl lg:text-6xl font-bold mb-7 mt-5 text-gray-900 dark:text-white"
-              >
-                {t("sections.ourChallenge.title")}
+              <h2 className="text-4xl lg:text-6xl font-bold mb-7 mt-5 text-gray-900 dark:text-white">
+                {t("sections.home.title")}
               </h2>
 
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-7 font-normal">
-                We are a company dedicated to providing high-quality products
-                and services to our customers. Our team of experts is committed
-                to innovation and excellence in everything we do.
+                {t("sections.home.description")}
               </p>
             </div>
 
@@ -390,7 +384,7 @@ export default function Home() {
                   crops.
                 </p>
 
-                <div className="container grid grid-cols-2 gap-8 py-10">
+                <div className="container grid grid-cols-2 place-items-start gap-8 py-10">
                   {benefits.map((benefit, index) => (
                     <div
                       key={index}
@@ -484,16 +478,16 @@ export default function Home() {
                   (Crop-CASMA)
                 </a>
                 <p className="text-lg mt-7 text-justify font-normal">
-                  Crop CASMA provides access to high-resolution data from NASA's
-                  Soil Moisture Active Passive (SMAP) mission and the Moderate
-                  Resolution Imaging Spectroradiometer (MODIS) instrument in an
-                  easy-to-use format. Soil moisture data is essential for
-                  professionals in agriculture and natural resources who use
-                  soil moisture in conjunction with other data to plan planting,
-                  predict yields, monitor droughts or floods, and enhance
-                  weather forecasting. This application offers a suite of
-                  services, including Web Map Service (WMS), Web Coverage
-                  Service (WCS), and Web Processing Services (WPS).
+                  Crop CASMA provides access to high-resolution data from
+                  NASA&apos;s Soil Moisture Active Passive (SMAP) mission and
+                  the Moderate Resolution Imaging Spectroradiometer (MODIS)
+                  instrument in an easy-to-use format. Soil moisture data is
+                  essential for professionals in agriculture and natural
+                  resources who use soil moisture in conjunction with other data
+                  to plan planting, predict yields, monitor droughts or floods,
+                  and enhance weather forecasting. This application offers a
+                  suite of services, including Web Map Service (WMS), Web
+                  Coverage Service (WCS), and Web Processing Services (WPS).
                 </p>
               </div>
             </div>
@@ -534,7 +528,7 @@ export default function Home() {
         >
           <div className="container h-full flex-1 flex flex-col mx-auto px-4 py-16">
             <h2 className="text-4xl font-bold mb-20 text-gray-900 dark:text-white">
-              {t("nav.aboutUs")}
+              {t("nav.about-us")}
             </h2>
 
             <div className="flex-1 flex items-center justify-center">

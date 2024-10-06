@@ -1,32 +1,31 @@
 {
   "home": {
     "nav": {
-      "heroSection": "Principal",
-      "aboutUs": "Sobre nós",
-      "ourChallenge": "Nosso desafio",
-      "contactUs": "Contate-nos"
+      "home": "Início",
+      "about-us": "Sobre nós",
+      "our-challenge": "Nosso desafio",
+      "our-application": "Nossa aplicação"
     },
     "sections": {
-      "ourChallenge": {
-        "badge": "Apoio à tomada de decisões agrícolas",
-        "title": "Observação de dados meteorológicos para auxiliar no seu plantio",
-        "description": "Somos uma empresa dedicada a fornecer produtos e serviços de alta qualidade aos nossos clientes. Nossa equipe de especialistas está comprometida com a inovação e a excelência em tudo o que fazemos.",
-        "input": {
-          "placeholder": "Digite o nome da sua cidade"
+      "home": {
+        "badge": "Suporte para tomada de decisão agrícola",
+        "title": "Observação de dados climáticos para auxiliar o seu plantio",
+        "description": "Somos uma empresa dedicada a fornecer produtos e serviços de alta qualidade aos nossos clientes. Nossa equipe de especialistas está comprometida com a inovação e a excelência em tudo o que fazemos."
+      },
+      "our-challenge": {
+        "title": "",
+        "description": "",
+        "benefits": {
+          "data-driven-mission": "Missão orientada por dados",
+          "future-vision": "Visão de futuro",
+          "trusted-partnership": "Parceria confiável",
+          "support-team": "Equipe de suporte"
         }
       }
     }
   },
-  "profile": {
-    "title": "Editar perfil",
-    "description": "Faça alterações no seu perfil aqui. Clique em salvar quando terminar.",
-    "form": {
-      "body": "Corpo do formulário",
-      "submit": "Salvar alterações"
-    }
-  },
   "theme-mode": {
-    "label": "Alterar tema",
+    "label": "Alternar tema",
     "light": "Claro",
     "dark": "Escuro",
     "system": "Sistema"

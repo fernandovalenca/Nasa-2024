@@ -23,14 +23,14 @@ type AvailableLocale = {
 
 export const AVAILABLE_LOCALES: AvailableLocale[] = [
   {
-    id: "pt",
-    flag: "BR",
-    label: "pt-BR",
-  },
-  {
     id: "en",
     flag: "US",
     label: "en-US",
+  },
+  {
+    id: "pt",
+    flag: "BR",
+    label: "pt-BR",
   },
 ];
 
