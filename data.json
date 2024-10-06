@@ -1,0 +1,50 @@
+{
+    "Milho": {
+        "Tempo de Produção": "120",
+        "Volume de Chuva Necessário": "650",
+        "Estresse Hídrico": "6",
+        "Temperatura Média": "24-30"
+    },
+    "Soja": {
+        "Tempo de Produção": "105",
+        "Volume de Chuva Necessário": "700",
+        "Estresse Hídrico": "5",
+        "Temperatura Média": "20-25"
+    },
+    "Arroz": {
+        "Tempo de Produção": "135",
+        "Volume de Chuva Necessário": "1250",
+        "Estresse Hídrico": "10",
+        "Temperatura Média": "25-30"
+    },
+    "Trigo": {
+        "Tempo de Produção": "150",
+        "Volume de Chuva Necessário": "500",
+        "Estresse Hídrico": "4.5",
+        "Temperatura Média": "15-20"
+    },
+    "Batata": {
+        "Tempo de Produção": "105",
+        "Volume de Chuva Necessário": "700",
+        "Estresse Hídrico": "7",
+        "Temperatura Média": "15-20"
+    },
+    "Tomate": {
+        "Tempo de Produção": "80",
+        "Volume de Chuva Necessário": "600",
+        "Estresse Hídrico": "5.5",
+        "Temperatura Média": "20-25"
+    },
+    "Feijão": {
+        "Tempo de Produção": "75",
+        "Volume de Chuva Necessário": "500",
+        "Estresse Hídrico": "3.5",
+        "Temperatura Média": "20-30"
+    },
+    "Cana-de-açúcar": {
+        "Tempo de Produção": "540",
+        "Volume de Chuva Necessário": "1500",
+        "Estresse Hídrico": "12.5",
+        "Temperatura Média": "25-30"
+    }
+}

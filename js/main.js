@@ -1,12 +1,25 @@
-geolocation()
-    .then(() => {
-        run();  // Só será chamado após as coordenadas serem obtidas
-    })
-    .catch((error) => {
-        console.error("Error getting location: ", error);
-    });
+// geolocation()
+//     .then(() => {
+//         main();  // Só será chamado após as coordenadas serem obtidas
+//     })
 
-function run() {
-    console.log("Latitude inside run(): " + latitude);
-    console.log("Longitude inside run(): " + longitude);
+async function main() {
+
+
+    try {
+        const cityData = await get_values(96, 70);
+        let cityDataJson = await cityData.json();
+
+        let periods= filter_periods(cityDataJson.properties.periods)
+
+        console.log(periods)
+        console.log( await get_temp_media(periods));
+
+    } catch (error) {
+        console.error("Erro ao obter dados da cidade:", error);
+    }
 }
+
+
+ main()
+
