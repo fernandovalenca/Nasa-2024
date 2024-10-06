@@ -83,6 +83,7 @@ export default function Home() {
   };
 
   const sections = [
+    { id: "hero-section", label: t("nav.heroSection")},
     { id: "our-challenge", label: t("nav.ourChallenge") },
     { id: "contact-us", label: t("nav.contactUs") },
     { id: "about-us", label: t("nav.aboutUs") },
@@ -266,30 +267,34 @@ export default function Home() {
 
       <ScrollArea className="select-none">
         <section
-          id="our-challenge"
+          id="hero-section"
           className="min-h-screen h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800"
         >
           <div className="container flex flex-col-reverse lg:flex-row gap-4 justify-center items-center mx-auto px-4">
             {/* Texto e Input */}
             <div className="flex-1 max-w-2xl">
-              <Badge className="text-[#244030] bg-[#D5EEC6] rounded-full">
-                Support for agricultural decision-making
+              <Badge 
+                className="text-[#244030] bg-[#D5EEC6] rounded-full"
+              >
+                {t("sections.ourChallenge.badge")}
               </Badge>
 
-              <h2 className="text-4xl lg:text-6xl font-bold mb-7 mt-5 text-gray-900 dark:text-white">
-                Observation of weather data to assist your planting
+              <h2 
+                className="text-4xl lg:text-6xl font-bold mb-7 mt-5 text-gray-900 dark:text-white"
+              >
+                {t("sections.ourChallenge.title")}
               </h2>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-7">
-                We are a company dedicated to providing high-quality products
-                and services to our customers. Our team of experts is committed
-                to innovation and excellence in everything we do.
+              <p 
+                className="text-lg text-gray-700 dark:text-gray-300 mb-7"
+              >
+                {t("sections.ourChallenge.description")}
               </p>
 
               <input
                 type="text"
                 className="w-full h-16 rounded-full px-8 border border-gray-300 dark:border-gray-600 dark:bg-gray-900"
-                placeholder="Enter your city's name"
+                placeholder={t("sections.ourChallenge.input.placeholder")}
                 aria-label="Enter your city's name"
                 autoComplete="off"
                 autoCapitalize="off"
@@ -309,6 +314,22 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+        </section>
+
+        <section
+          id="our-challenge"
+          className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900"
+        >
+          <div className="container mx-auto px-4 py-16">
+            <h2 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
+              {t("nav.contactUs")}
+            </h2>
+            <p className="text-xl text-gray-700 dark:text-gray-300">
+              Discover our range of cutting-edge products designed to meet your
+              needs. From sustainable solutions to innovative technologies, we
+              have something for everyone.
+            </p>
           </div>
         </section>
 

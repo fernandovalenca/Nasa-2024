@@ -1,9 +1,20 @@
 {
   "home": {
     "nav": {
+      "heroSection": "Home",
       "aboutUs": "About us",
       "ourChallenge": "Our challenge",
       "contactUs": "Contact us"
+    },
+    "sections": {
+      "ourChallenge": {
+        "badge": "Support for agricultural decision-making",
+        "title": "Observation of weather data to assist your planting",
+        "description": "We are a company dedicated to providing high-quality products and services to our customers. Our team of experts is committed to innovation and excellence in everything we do.",
+        "input": {
+          "placeholder": "Enter your city's name"
+        }
+      }
     }
   },
   "profile": {
