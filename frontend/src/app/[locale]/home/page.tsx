@@ -13,8 +13,8 @@ type Props = {
 
 const getTitleByLocale = (locale: Locale): string => {
   const titles: Record<Locale, string> = {
-    en: "Stardew Valley",
-    pt: "Stardew Valley",
+    en: "Farm IQ",
+    pt: "Farm IQ",
   };
 
   return titles[locale] || titles["en"];
